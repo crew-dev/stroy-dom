@@ -18,7 +18,6 @@ a {
     text-decoration: none;
 }
 
-/* Header */
 header {
     background: #28323f;
     height: 78.5px;
@@ -126,7 +125,7 @@ a.tel:hover {
 }
 
 .photo-img {
-    background-image: url(img/photo-main.jpg);
+    background-image: url(/img/photo-main.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 50% 0%;
