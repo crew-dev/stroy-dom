@@ -813,12 +813,12 @@ img.avatar {
 
 .slider .slick-arrow.slick-prev {
     left: -40px;
-    background: url('/img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
+    background: url('img/sl-arrow_l.svg') 0 0 / 100% no-repeat;
 }
 
 .slider .slick-arrow.slick-next {
     right: -40px;
-    background: url('/img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
+    background: url('img/sl-arrow_r.svg') 0 0 / 100% no-repeat;
 }
 
 .slider .slick-arrow.slick-disabled {
