@@ -81,10 +81,11 @@ a.nav__link {
     color: #fff;
     transition: ease 0.3s;
     text-decoration: none;
-    margin-left: 30px;
+    margin-right: 30px;
 }
 
 a.nav__link:first-child {
+		margin-left: 30px;
     color: #ff5e00;
 }
 
@@ -104,6 +105,7 @@ img.tel-photo {
 
 .tel-number {
     display: flex;
+		align-items: center;
 }
 
 a.tel {
@@ -142,13 +144,11 @@ h1.main__title {
     text-transform: uppercase;
     color: #fff;
     font-weight: bold;
-    margin-left: 100px;
-    margin-top: 100px;
-    padding-bottom: 25px;
+    margin: 90px 90px 20px;
 }
 
 ul.advantage {
-    margin-left: 60px;
+    margin-left: 50px;
     font-size: 18px;
     color: rgb(0, 0, 0);
     font-weight: 500;
@@ -158,7 +158,7 @@ ul.advantage {
     margin-bottom: 8px;
     padding: 0;
     padding-right: 20px;
-    max-width: 750px;
+    max-width: 770px;
     counter-reset: li;
 }
 
@@ -566,20 +566,6 @@ input.input-at:focus {
     text-align: justify;
 }
 
-/* 
-summary {
-    color: #080808;
-    margin: 12px 0px 5px 0px;
-    text-align: center;
-    cursor: pointer;
-}
-
-summary:hover {
-    color: #ff5e00;
-    transition: all 0.4s;
-} */
-
-/* stylized list */
 .square {
     margin: 0;
     counter-reset: li;
@@ -1089,16 +1075,20 @@ p.accordion__text {
 }
 
 
-/* @Media */
-@media screen and (max-width: 730px) {
+@media screen and (max-width: 768px) {
     header {
-        height: 68px;
+        height: 64px;
     }
 
     .feedback__card {
         margin: 40px 5px 30px 5px;
         box-shadow: none;
     }
+
+		.button {
+    position: relative;
+    margin-left: 55px;
+}
 
     .about__title {
         padding-top: 40px;
@@ -1120,16 +1110,13 @@ p.accordion__text {
         background-position: 40% 0%;
     }
 
-    a.nav__link:first-child {
-        font-size: 14px;
-    }
-
     img.logo {
-        width: 107px
+        width: 100px
     }
 
     a.nav__link {
         font-size: 14px;
+				margin-right: 24px;
     }
 
     .content {
@@ -1137,39 +1124,15 @@ p.accordion__text {
     }
 
     ul.advantage {
-        padding: 12px;
-        margin-left: 0px;
-        font-size: 15px;
-    }
-
-    .advantage {
-        max-width: 650px;
+    padding: 0 12px;
+    margin-left: 0px;
+    font-size: 16px;
+}
     }
 
     .advantage li {
         padding: 16px 20px 16px 28px;
     }
-
-    h1.main__title {
-        font-size: 25px;
-        margin-left: 50px;
-        margin-right: 10px;
-        margin-top: 80px;
-    }
-
-    .btn {
-        text-align: center;
-        width: 208px;
-        margin: auto;
-        padding: 16px;
-    }
-
-    .btn:hover {
-        padding: 19px;
-        width: 213px;
-        margin: auto;
-    }
-
     .header__top {
         padding-top: 40px;
         margin-bottom: 10px;
@@ -1184,19 +1147,7 @@ p.accordion__text {
     .info {
         font-size: 16px;
     }
-
-    .button {
-        position: relative;
-        color: #fff;
-        margin: 0px;
-    }
-
-    .button {
-        position: relative;
-        color: #fff;
-        margin: 0px;
-    }
-
+		
     .service__title {
         font-size: 19px;
         font-weight: bold;
@@ -1230,31 +1181,37 @@ p.accordion__text {
     .feedback__name {
         font-size: 19px;
     }
-}
-
-@media (min-width: 730px) and (max-width: 950px) {
-    p.title {
-        font-size: 30px;
-    }
-
-}
 
 @media (min-width: 320px) and (max-width: 950px) {
     img.tel-photo {
         margin: 12px;
     }
-
     a.tel {
         font-size: 0px;
     }
 }
 
+@media (min:width: 320px) {
+		h1.main__title {
+			font-size: 22px;
+		}
+}
+
 @media (max-width: 768px) {
-    ul.slider .slick-dots {
-        display: flex;
-        align-items: center;
-        justify-content: center;
+	ul.slider .slick-dots {
+			display: flex;
+			align-items: center;
+			justify-content: center;
     }
+		
+		h1.main__title {
+			max-width: 100%;
+			font-size: 28px;
+			text-transform: uppercase;
+			color: #fff;
+			font-weight: bold;
+			margin: 90px 60px 20px;
+		}
 
     .validate-input-at.w-50 {
         width: 100%;
@@ -1280,9 +1237,22 @@ p.accordion__text {
     }
 }
 
-@media (min-width: 650px) {
+@media (max-width: 660px) {
  .input__contact {
     max-width: 100%;
     width: 295px;
     }
+		nav {
+			display: none;
+		}
+		.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 0 20px;
+    align-items: center;
+	}
+	a.tel {
+		font-size: 16px;
+	}
+
 }
