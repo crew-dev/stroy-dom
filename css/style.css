@@ -1254,5 +1254,12 @@ p.accordion__text {
 	a.tel {
 		font-size: 16px;
 	}
-
+	h1.main__title {
+    max-width: 100%;
+    font-size: 25px;
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: bold;
+    margin: 90px 60px 20px;
+}
 }
